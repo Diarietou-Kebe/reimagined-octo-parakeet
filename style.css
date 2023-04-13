@@ -1,0 +1,35 @@
+.container {
+    text-align: center;
+    padding: 100px;
+    color: #FF33B2;
+    font-weight: Impact;
+    
+
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+    transition: width 2s, height 4s;
+    transition: transform 0.5s ease;
+  } 
+  .img:hover {
+    width: 300px;
+    height: 300px;
+    transform: scale(1.2);
+
+  }
+  .p1, .p2 {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    font-size: 50px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
